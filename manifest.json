@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Amazon Smile Switcher",
+  "description": "This extension automatically redirects requests to smile.amazon.com to ensure your donations work.",
+  "version": "1.0",
+
+  "permissions" : [
+    "webRequest",
+    "webRequestBlocking",
+    "*://www.amazon.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
